@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ArtGalleryVake/static/css/main.29d88c03.css",
+    "main.js": "/ArtGalleryVake/static/js/main.e378e583.js",
+    "index.html": "/ArtGalleryVake/index.html",
+    "main.29d88c03.css.map": "/ArtGalleryVake/static/css/main.29d88c03.css.map",
+    "main.e378e583.js.map": "/ArtGalleryVake/static/js/main.e378e583.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29d88c03.css",
+    "static/js/main.e378e583.js"
+  ]
+}
