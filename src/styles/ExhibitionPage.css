@@ -1,0 +1,118 @@
+/* src/styles/ExhibitionPage.css */
+
+.exhibition-page-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative; /* For back button positioning */
+}
+
+.back-button-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button .arrow {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.exhibition-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+.exhibition-image-large {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 8px;
+  border: 5px solid #e0e0e0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.exhibition-info-text {
+  width: 100%;
+  max-width: 700px;
+}
+
+.exhibition-name {
+  font-size: 2.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.exhibition-description {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.no-description-message {
+  font-size: 1.1em;
+  color: #777;
+  font-style: italic;
+  text-align: left;
+}
+
+.error-message {
+  color: #d9534f;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .exhibition-page-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .exhibition-content {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .exhibition-image-large {
+    max-width: 100%;
+  }
+  .exhibition-name {
+    font-size: 2em;
+  }
+  .exhibition-description {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .back-button-container {
+    top: 15px;
+    left: 15px;
+  }
+}

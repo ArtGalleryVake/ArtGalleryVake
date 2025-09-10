@@ -1,0 +1,93 @@
+@import url('https://fonts.cdnfonts.com/css/boowie');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.landing-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.landing-header{
+    font-family: 'Boowie', sans-serif;
+    color: #333;
+    text-align: center;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 0.3px solid gray;
+    padding-bottom: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: -140px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  background-color: #333;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::before {
+  width: 80%;
+}
+
+
+.logo-container{
+    margin-left: -120px;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 25%;
+    left: 50%;                /* Position the left edge at the horizontal middle */
+    transform: translateX(-50%);
+}
+
+.landing-img {
+  height: 450px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.secondary-text{
+    width: 500px;
+}
+
+.main-text h1 {
+  font-family: 'Boowie', sans-serif;
+  font-size: 3.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
